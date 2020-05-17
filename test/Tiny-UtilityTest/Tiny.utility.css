@@ -1,0 +1,42 @@
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+.border-circle{
+    border-radius: 50%;
+}
+.border-rounded{
+    border-radius: 10px;
+}
+.lil-pad{
+    padding: 10px;
+}
+.lil-mrgn{
+    margin: 10px;
+}
+.justify-self-start{
+    justify-self: flex-start;
+}
+.align-self-start{
+    align-self: flex-start;
+}
+.justify-self-center{
+    justify-self: center;
+}
+.align-self-center{
+    align-self: center;
+}
+.justify-self-end{
+    justify-self: flex-end;
+}
+.align-self-end{
+    align-self: flex-end;
+}
+.img-hover-filter:hover{
+    transition: 0.2s all;
+    filter: brightness(0.8);
+}
+.img-active-filter:active{
+    transition: 0.2s all;
+    filter: brightness(0.98);
+}

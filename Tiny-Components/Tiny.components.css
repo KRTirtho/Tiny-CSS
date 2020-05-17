@@ -1,0 +1,119 @@
+@import "../Tiny-Style/Tiny.Style.css";
+
+
+:root{
+
+}
+
+
+/* For Card Style Divisions */
+
+.card-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    max-width: 270px;
+    border-radius: 10px;
+    margin: 15px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+/* DeskTop Top-Side Nav */
+.navDesk{
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: khaki;
+    max-height: 6vh;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    font-weight: 700;
+    font-size: 25px;
+}
+.logo-img{
+    margin: 0 10px;
+    max-height: 5vh;
+    max-width: 5vw;
+ }
+ .navDesk .navLink-container{
+     margin-right: 30px;
+ }
+.navDesk .navLink-container .navLink{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.navLink-container .navLink a{
+    background-color: #fff;
+    padding: 10px;
+    color: skyblue;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--global-transition-duration) all; /*imported*/
+}
+.navLink-container .navLink a:hover{
+    background-color: #f1f1f1;
+}
+.navLink-container .navLink a:active{
+    background-color: #f7f7f7;
+}
+
+/* Desktop Side Nav */
+
+.navSide{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: lemonchiffon;
+    height: 100vh;
+    transition: var(--global-transition-duration) all;
+    
+}
+.navSide .logo-container-side{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+}
+.navSide-link-container{
+    display: flex;
+    flex-direction: column;
+}
+.navSide-link{
+    transition: var(--global-transition-duration) all;
+    background-color: rgb(212, 244, 255);
+    text-decoration: none;
+    color: #2c2c2c;
+    padding: 0 15px;
+    line-height: 2.5em;
+}
+.odd{
+    filter: brightness(0.9);
+}
+aside{
+    position: relative;
+    top: 0;
+    border-radius: 10px;
+    right: 0;
+    width: 240px;
+    background-color: #f3f3f3;
+    padding: 15px;
+}

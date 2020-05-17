@@ -1,0 +1,56 @@
+@import "../../Tiny-Components/Tiny.components.css";
+
+/* Mobile NavBar Experimental */
+
+@media (max-width: 678px){
+
+.navDesk{
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: khaki;
+}
+.logo-container p{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+}
+.logo-img{
+    display: inline-block;
+    margin: 0;
+    max-height: 7vh;
+    max-width: 7vw;
+ }
+ .navDesk .navLink-container{
+     width: 100%;
+     background-color: khaki;
+     }
+.navDesk .navLink-container .navLink{
+    /* margin: 5px; */
+    list-style: none;
+    margin-bottom: 5px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+.navLink-container .navLink a{
+    color: skyblue;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--global-transition-duration) all; /*imported*/
+}
+.navLink-container .navLink a:hover{
+    background-color: #f1f1f1;
+}
+.navLink-container .navLink a:active{
+    background-color: #f7f7f7;
+}
+
+}

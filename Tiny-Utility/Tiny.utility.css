@@ -1,18 +1,71 @@
+/* For Responsive Img */
 .img-responsive{
     max-width: 100%;
     height: auto;
 }
+/* Border modification */
 .border-circle{
     border-radius: 50%;
 }
 .border-rounded{
     border-radius: 10px;
 }
-.lil-pad{
+/* Little Padding */
+.tiny-padding{
     padding: 10px;
 }
-.lil-mrgn{
+/* Little Margin */
+.tiny-margin{
     margin: 10px;
+}
+/* For Centering */
+.horizontal-center,
+.vertical-center{
+    position: relative;
+}
+.horizontal-center,
+.horizontal-center-strict{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vertical-center,
+.vertical-center-strict{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.horizontal-center-strict,
+.vertical-center-strict{
+    position: absolute;
+}
+
+/* For Removing Ugly List Style */
+.list-style-none{
+    list-style: none;
+}
+/* For removing ugly text decoration */
+.text-decoration-none{
+    text-decoration: none;
+}
+
+/* Flex Items */
+.justify-self-start{
+    justify-content: flex-start;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.align-items-start{
+    align-items: flex-start;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-end{
+    align-items: flex-end;
 }
 .justify-self-start{
     justify-self: flex-start;
@@ -32,11 +85,46 @@
 .align-self-end{
     align-self: flex-end;
 }
-.img-hover-filter:hover{
+
+/* Text Align */
+.text-align-left{
+    text-align: left;
+}
+.text-align-right{
+    text-align: right;
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-justify{
+    text-align: justify;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.cursor-not-allowed{
+    cursor: not-allowed;
+}
+.cursor-grab{
+    cursor: grab;
+}
+.cursor-progress{
+    cursor: progress;
+}
+
+
+/* Hover Effect */
+.hover-filter:hover{
     transition: 0.2s all;
     filter: brightness(0.8);
 }
-.img-active-filter:active{
+/* Active Effect */
+.active-filter:active{
     transition: 0.2s all;
     filter: brightness(0.98);
+}
+/* For Differentiating List or Table Even and odd Rows  */
+.odd{
+    filter: brightness(0.9);
 }

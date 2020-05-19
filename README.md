@@ -2,7 +2,7 @@
 
 A simple, tiny, long-typed CSS3 framework built with the inspiration from Legendary Bootstrap CSS & a bit from Respective Tailwind CSS.
 
-It uses CSS classes to style elements similar to Bootstrap & Tailwind CSS but also uses __data-__ attributes to determine the Shade of the Document. The main attraction of it, is it's __Dark-Mode__ prioritized approach. __data-shade="dark"__ is used to check if the Element is in dark mode or not. With the help of Javascript anyone can Easily toggle the **dark mode** of the targeted Element.
+It uses CSS classes to style elements similar to Bootstrap & Tailwind CSS but also uses __data-__ attributes to determine the Shade of the Document. The main attraction of it, is it's __Dark-Mode__ prioritized approach. __data-shade="dark"__ is used to check if the Element is in dark mode or not. With the help of Javascript anyone can Easily toggle the **dark mode** of the targeted Element. But for enabling <span style="color: orangered">Dark-Mode Convertable DOM or <b style="color:cornflowerblue">DMC-DOM</b></span> feature it is important to specify it's class with `.container`. Then the JavaScript module can easily understand which is _DMC-DOM_.
 
 Another great approach of it is that it is built on top of the modern CSS3 that means instead of using 
 
@@ -65,6 +65,29 @@ toggleBtn.addEventListener("click", toggleDarkMode)
 ```
 
 
-Don't worry if you are terrified seeing that you have to write `setAttribute()`, `getAttribute()` & `removeAttribute()` so many times. You can use a `for` loop or a high-order array function to fix this issue...
+Don't worry if you are terrified seeing that you have to write `setAttribute()`, `getAttribute()` & `removeAttribute()` so many times. You can use a `for` loop or a high-order array function (like `array.prototype.forEach()`) to fix this issue... Let me give an example for it  -->
+
+```javascript
+let container = document.querySelectorAll(".container");
+
+const toggleDarkMode=(e)=>{
+  container.forEach(DMC=>{
+    if(!d.getAttribute("data-shade")){   /* Checking if data-shade is present or not*/
+      DMC.setAttribute("data-shade", "dark")  /* applying & creating data-shade="dark" */
+    }
+    else if(d.getAttribute("data-shade")==="light"){ /* Checking  if it's default to "light" or not*/
+      DMC.setAttribute("data-shade", "dark") /* applying data-shade="dark" */
+    }
+    else{
+      DMC.removeAttribute("data-shade") //If neither of those returns true we Remove the attribute
+    }
+  })
+  
+}
+
+toggleBtn.addEventListener("click", toggleDarkMode);
+```
+
+
 
 For more information stay with me & follow me on <a href="https://twitter.com/@krtirtho" target="_blank">Twitter</a> & <a href="https://facebook.com/krtirtho" target="_blank">Facebook</a>

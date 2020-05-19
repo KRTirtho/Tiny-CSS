@@ -37,7 +37,7 @@ I'll give you all the examples & classes in my Official Tiny-CSS WebPage. You'll
 
 Here `class="semi-div"` is a Simple div container with the width of 90% & `.container-div` is used for applying a minimal `background-color` to any div element.Attribute `data-shade="light"` is not important but for better readability you can use it but if you use javascript and set the attribute to dark it won't create a issue because it creates a new __data-shade__ attribute for that particular element `text-align-justify` & `vertical-center` are some utility classes for Justifying the text & center the corresponding element  vertically. Id is important because you have to select the element & then change the mode, right?
 
-Look at the javascript code & you will get an idea of how to create the _dark-mode_ toggle btn. But first let's add a a toggle button first
+Look at the javascript code & you will get an idea of how to create the _dark-mode_ toggle btn. But  let's add a toggle button first
 
 ```html
 <button id="toggle" class="btn" style="position: 
@@ -65,6 +65,6 @@ toggleBtn.addEventListener("click", toggleDarkMode)
 ```
 
 
-Don't worry if you are terrified seeing that you have write `setAttribute()`, `getAttribute()` & `removeAttribute()` so many times. You can use a `for` loop or a high-order function array function to fix this issue...
+Don't worry if you are terrified seeing that you have to write `setAttribute()`, `getAttribute()` & `removeAttribute()` so many times. You can use a `for` loop or a high-order array function to fix this issue...
 
 For more information stay with me & follow me on <a href="https://twitter.com/@krtirtho" target="_blank">Twitter</a> & <a href="https://facebook.com/krtirtho" target="_blank">Facebook</a>

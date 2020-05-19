@@ -108,6 +108,27 @@
 .tiny-margin {
   margin: 10px;
 }
+
+.md-margin{
+  margin: 25px;
+}
+.lg-margin{
+  margin: 50px;
+}
+.xl-margin{
+  margin: 85px;
+}
+.md-padding{
+  padding: 25px;
+}
+.lg-padding{
+  padding: 50px;
+}
+.xl-padding{
+  padding: 85px;
+}
+
+
 /* For Centering */
 .horizontal-center,
 .vertical-center {
@@ -233,6 +254,21 @@
   transition: 0.2s all;
   filter: brightness(0.98);
 }
+/* Transition */
+.tiny-transition{
+  transition: 0.2s all ease;
+}
+.md-transition{
+  transition: 1s all ease;
+}
+.lg-transition{
+  transition: 2.5s all ease;
+}
+.xl-transition{
+  transition: 5s all ease;
+}
+
+
 /* For Differentiating List or Table Even and odd Rows  */
 .odd {
   filter: brightness(0.9);

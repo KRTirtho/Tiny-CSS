@@ -6,7 +6,7 @@
     <title>TinyCSS</title>
     <link rel="stylesheet" href="Tiny.Style.css" />
   </head>
-  <body>
+  <body class="scroll dark-scroll dark-body">
     <h1>h1</h1>
     <h2>h2</h2>
     <h3>h3</h3>
@@ -17,7 +17,9 @@
     <div>div</div>
     <a class="link" href="">a:link</a>
     <button class="btn">button</button>
+    <button class="btn dark-btn">button</button>
     <button class="btn btn-close">&Cross;</button>
+    <button class="btn btn-close dark-btn-close">&Cross;</button>
     <button class="btn btn-primary">button</button>
     <button class="btn btn-secondary">button</button>
     <button class="btn btn-danger">button</button>
@@ -30,69 +32,86 @@
     <ol class="ol">
       <li>ol li</li>
     </ol>
+    <ul class="ul-with-bg dark-ul-with-bg">
+      <li>Erewaohe</li>
+      <li>Erewaohe</li>
+      <li>Erewaohe</li>
+    </ul>
     <form action=""></form>
-    <input class="input-custom" type="text" placeholder="text" />
+    <input class="input-custom dark-input-custom" type="text" placeholder="text" />
+    <input class="input-custom dark-input-custom" type="button" value="inputButton" />
     <input class="input-custom" type="button" value="inputButton" />
-    <input
-      class="input-custom"
-      type="checkbox"
-      name=""
-      id=""
-      value="Checkbox"
-    />
+    <label class="custom-checkbox">
+      <input
+        class="input-custom"
+        type="checkbox"
+        value="Checkbox"
+      />
+      <span class="checkbox"></span>
+    </label>
     <input class="input-custom" type="color" name="" id="" value="Color" />
-    <input class="input-custom" type="date" name="" id="" value="date" />
+    <input class="input-custom dark-input-custom" type="date" name="" id="" value="date" />
     <input
-      class="input-custom"
+      class="input-custom dark-input-custom"
       type="email"
       name=""
       id=""
       placeholder="Email"
     />
-    <input class="input-custom" type="number" name="" id="" placeholder="1" />
+    <input class="input-custom dark-input-custom" type="number" name="" id="" placeholder="1" />
     <input
-      class="input-custom"
+      class="input-custom dark-input-custom"
       type="password"
       name=""
       id=""
       placeholder="Password"
     />
-    <input class="input-custom" type="radio" name="" id="" value="Radio" />
+    <!-- Radio Button is Buggy❌ -->
+    <label class="custom-radio">
+      <input class="input-custom" type="radio" value="Radio1" />
+      <span class="radio"></span>
+    </label>
+    
+    <label class="custom-radio">
+      <input class="input-custom" type="radio" value="Radio2" />
+      <span class="radio"></span>
+    </label>
+    
     <input class="input-custom" type="submit" value="Submit" />
     <input
-      class="input-custom"
+      class="input-custom dark-input-custom"
       type="search"
       name=""
       id=""
       placeholder="Search"
     />
-    <input class="input-custom" type="url" name="" id="" placeholder="Url" />
-    <select class="select">
+    <input class="input-custom dark-input-custom" type="url" name="" id="" placeholder="Url" />
+    <select class="select dark-select">
         <option value="">First</option>
         <option value="">Second</option>
         <option value="">Third</option>
     </select>
-    <table>
-      <thead>
-        <tr>
-          <td>thead tr td</td>
-          <th>thead tr th</th>
+    <table class="table">
+      <thead class="thead">
+        <tr class="tr">
+          <td class="td">thead tr td</td>
+          <th class="th">thead tr th</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td class="td-chill">tbody tr td</td>
-          <th>tbody tr th</th>
+      <tbody class="tbody">
+        <tr class="tr">
+          <td class="td td-danger">tbody tr td</td>
+          <th class="th">tbody tr th</th>
         </tr>
       </tbody>
-      <tfoot>
-        <tr>
-          <td>tfoot tr td</td>
-          <th>tfoot tr td</th>
+      <tfoot class="tfoot">
+        <tr class="tr">
+          <td class="td td-success">tfoot tr td</td>
+          <th class="th">tfoot tr td</th>
         </tr>
       </tfoot>
     </table>
-    <p class="container-div">
+    <p class="container-div dark-container-div">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti,
       ullam quo dolorem porro debitis iure voluptatum nobis harum ipsam numquam
       aperiam error ratione, veritatis doloremque nam non autem. Eius, esse

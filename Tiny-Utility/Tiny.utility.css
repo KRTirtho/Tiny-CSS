@@ -1,130 +1,239 @@
 /* For Responsive Img */
-.img-responsive{
-    max-width: 100%;
-    height: auto;
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+.img-xl{
+    width: 225px;
+    height: 225px;
+}
+.img-lg{
+    width: 120px;
+    height: 120px;
+}
+.img-md{
+    width: 65px;
+    height: 65px;
+}
+.img-sm {
+  width: 40px;
+  height: 40px;
+}
+.img-xs{
+    width: 25px;
+    height: 25px;
+}
+/* All Blocky Elements */
+.display-inline-block {
+  display: inline-block;
+}
+.display-block {
+  display: block;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+/* Dimension */
+.width-half{
+  width: 50%;
+}
+.height-half{
+  height: 50%;
+}
+.width-vw-half{
+  width: 50vw;
+}
+.height-vh-half{
+  height: 50vh;
+}
+.width-full{
+  width: 100%;
+}
+.height-full{
+  height: 100%;
+}
+.width-vw-full{
+  width: 100vw;
+}
+.height-vh-full{
+  height: 100vh;
+}
+.width-quarter{
+  width: 25%;
+}
+.height-quarter{
+  height: 25%;
+}
+.width-vw-quarter{
+  width: 25vw;
+}
+.height-vh-quarter{
+  height: 25vh;
+}
+.width-3quarter{
+  width: 75%;
+}
+.height-3quarter{
+  height: 75%;
+}
+.width-vw-3quarter{
+  width: 75vw;
+}
+.height-vh-3quarter{
+  height: 75vh;
 }
 /* Border modification */
-.border-circle{
-    border-radius: 50%;
+.border-circle {
+  border-radius: 50%;
 }
-.border-rounded{
-    border-radius: 10px;
+.border-rounded {
+  border-radius: 10px;
 }
+.border-none{
+  border: none;
+}
+.border-none-strict{
+  border: none !important;
+}
+
 /* Little Padding */
-.tiny-padding{
-    padding: 10px;
+.tiny-padding {
+  padding: 10px;
 }
 /* Little Margin */
-.tiny-margin{
-    margin: 10px;
+.tiny-margin {
+  margin: 10px;
 }
 /* For Centering */
 .horizontal-center,
-.vertical-center{
-    position: relative;
+.vertical-center {
+  position: relative;
 }
 .horizontal-center,
-.horizontal-center-strict{
-    top: 50%;
-    transform: translateY(-50%);
+.horizontal-center-strict {
+  top: 50%;
+  transform: translateY(-50%);
 }
 .vertical-center,
-.vertical-center-strict{
-    left: 50%;
-    transform: translateX(-50%);
+.vertical-center-strict {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .horizontal-center-strict,
-.vertical-center-strict{
-    position: absolute;
+.vertical-center-strict {
+  position: absolute;
 }
 
 /* For Removing Ugly List Style */
-.list-style-none{
-    list-style: none;
+.list-style-none {
+  list-style: none;
 }
 /* For removing ugly text decoration */
-.text-decoration-none{
-    text-decoration: none;
+.text-decoration-none {
+  text-decoration: none;
 }
 
 /* Flex Items */
-.justify-self-start{
-    justify-content: flex-start;
+.display-flex{
+    display: flex;
 }
-.justify-content-center{
-    justify-content: center;
+.flex-dir-col{
+    flex-direction: column;
 }
-.justify-content-end{
-    justify-content: flex-end;
+.flex-dir-row{
+    flex-direction: row;
 }
-.align-items-start{
-    align-items: flex-start;
+.justify-self-start {
+  justify-content: flex-start;
 }
-.align-items-center{
-    align-items: center;
+.justify-content-center {
+  justify-content: center;
 }
-.align-items-end{
-    align-items: flex-end;
+.justify-content-end {
+  justify-content: flex-end;
 }
-.justify-self-start{
-    justify-self: flex-start;
+.align-items-start {
+  align-items: flex-start;
 }
-.align-self-start{
-    align-self: flex-start;
+.align-items-center {
+  align-items: center;
 }
-.justify-self-center{
-    justify-self: center;
+.align-items-end {
+  align-items: flex-end;
 }
-.align-self-center{
-    align-self: center;
+.justify-self-start {
+  justify-self: flex-start;
 }
-.justify-self-end{
-    justify-self: flex-end;
+.align-self-start {
+  align-self: flex-start;
 }
-.align-self-end{
-    align-self: flex-end;
+.justify-self-center {
+  justify-self: center;
 }
-
+.align-self-center {
+  align-self: center;
+}
+.justify-self-end {
+  justify-self: flex-end;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+.flex-no-grow{
+    flex-grow: 0;
+}
+.flex-no-shrink{
+    flex-shrink: 0;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-no-wrap{
+    flex-wrap: nowrap;
+}
 /* Text Align */
-.text-align-left{
-    text-align: left;
+.text-align-left {
+  text-align: left;
 }
-.text-align-right{
-    text-align: right;
+.text-align-right {
+  text-align: right;
 }
-.text-align-center{
-    text-align: center;
+.text-align-center {
+  text-align: center;
 }
-.text-align-justify{
-    text-align: justify;
-}
-
-.cursor-pointer{
-    cursor: pointer;
-}
-.cursor-not-allowed{
-    cursor: not-allowed;
-}
-.cursor-grab{
-    cursor: grab;
-}
-.cursor-progress{
-    cursor: progress;
+.text-align-justify {
+  text-align: justify;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+.cursor-grab {
+  cursor: grab;
+}
+.cursor-progress {
+  cursor: progress;
+}
 
 /* Hover Effect */
-.hover-filter:hover{
-    transition: 0.2s all;
-    filter: brightness(0.8);
+.hover-filter:hover {
+  transition: 0.2s all;
+  filter: brightness(0.8);
 }
 /* Active Effect */
-.active-filter:active{
-    transition: 0.2s all;
-    filter: brightness(0.98);
+.active-filter:active {
+  transition: 0.2s all;
+  filter: brightness(0.98);
 }
 /* For Differentiating List or Table Even and odd Rows  */
-.odd{
-    filter: brightness(0.9);
+.odd {
+  filter: brightness(0.9);
 }

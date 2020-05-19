@@ -10,43 +10,47 @@
   <title>Tiny Components</title>
 </head>
 
-<body class="scroll">
+<body  id="root" class="scroll body">
+
+  <button id="toggle" class="btn" style="position: fixed; left: 0; top: 50%;">Dark</button>
   <!-- Always place navbar at top of the document -->
-  <div class="navDesk">
+  <div id="navDesk"  class="navDesk">
     <div class="logo-container">
+      <button id="navSide-open" class="btn btn-close tiny-margin">=</button>
       <a href="">
         <img class="logo-img border-circle" src="../test-assests/images/CIMG0884.JPG" alt="Yo" /></a>
       <p>Yes</p>
     </div>
-    <div class="navLink-container">
-      <button class="navLink"><a href="">YoYOY</a></button>
-      <button class="navLink"><a href="">YoYOY</a></button>
-      <button class="navLink"><a href="">YoYOY</a></button>
-      <button class="navLink"><a href="">YoYOY</a></button>
+    <input type="search" class="input-custom border-none-strict tiny-margin" placeholder="Search">
+    <div id="navLink-container" class="navLink-container container" >
+        <button class="navLink"><a href="">YoYOY</a></button>
+        <button class="navLink"><a href="">YoYOY</a></button>
+        <button class="navLink"><a href="">YoYOY</a></button>
+        <button class="navLink"><a href="">YoYOY</a></button>
     </div>
   </div>
 
-  <div class="navSide">
+  <div  id="navSide" class="navSide">
     <div class="logo-container-side">
       <img class="logo-img" src="../test-assests/images/CIMG0884.JPG" alt="Yo" /></a>
       <h3>YoTube</h3>
-      <button class="btn btn-close tiny-margin">&Cross;</button>
+      <button id="navSide-close" class="btn btn-close tiny-margin">&Cross;</button>
     </div>
-    <div class="navSide-link-container">
-      <a class="navSide-link" href="">YOYOYYO</a>
-      <a class="navSide-link odd" href="">YOYOYYO</a>
-      <a class="navSide-link" href="">YOYOYYO</a>
-      <a class="navSide-link odd" href="">YOYOYYO</a>
-      <a class="navSide-link" href="">YOYOYYO</a>
-      <a class="navSide-link odd" href="">YOYOYYO</a>
-      <a class="navSide-link" href="">YOYOYYO</a>
-      <a class="navSide-link odd" href="">YOYOYYO</a>
+    <div  id="navSide-link" class="navSide-link-container container">
+        <a class="navSide-link" href="">YOYOYYO</a>
+        <a class="navSide-link odd" href="">YOYOYYO</a>
+        <a class="navSide-link" href="">YOYOYYO</a>
+        <a class="navSide-link odd" href="">YOYOYYO</a>
+        <a class="navSide-link" href="">YOYOYYO</a>
+        <a class="navSide-link odd" href="">YOYOYYO</a>
+        <a class="navSide-link" href="">YOYOYYO</a>
+        <a class="navSide-link odd" href="">YOYOYYO</a>
     </div>
   </div>
   <!-- Don't use aside elements below card elements
   Else things will break up -->
-  <div class="aside-container">
-    <aside class="aside">
+  <div  id="aside" class="aside-container container">
+    <aside class="aside container-div tiny-margin">
       <h3>Aside</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
         fugiat. Lorem ipsum dolor sit amet consectetur
@@ -61,7 +65,7 @@
         <li><a href="">Yo</a></li>
       </ul>
     </aside>
-    <aside class="aside">
+    <aside class="aside container-div tiny-margin">
       <h3>Aside</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
         fugiat. Lorem ipsum dolor sit amet consectetur
@@ -76,7 +80,7 @@
         <li><a href="">Yo</a></li>
       </ul>
     </aside>
-    <aside class="aside">
+    <aside class="aside tiny-margin container-div">
       <h3>Aside</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
         fugiat. Lorem ipsum dolor sit amet consectetur
@@ -93,7 +97,7 @@
     </aside>
   </div>
 
-  <div class="card-group">
+  <div class="card-group container"  id="card">
     <div class="container-div card">
       <h1>Card</h1>
       <img class="img-responsive border-circle" src="../test-assests/images/CIMG0884.JPG" alt="Yo" />
@@ -183,7 +187,7 @@
 
   </div>
 
-  <div class="semi-div vertical-center text-align-justify">
+  <div data-shade="light" id="semi-div" class="semi-div container-div vertical-center text-align-justify">
     <h1>Semi Div</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui facere eveniet, eligendi explicabo similique
       molestiae laudantium voluptate repudiandae quam velit architecto, nulla eos quae expedita totam aspernatur quia
@@ -203,8 +207,52 @@
   </div>
 
 
+  <!-- Login Page -->
+  <div  id="form" class="form-conatiner container-div border-rounded vertical-center tiny-margin">
+    <div class="vertical-center display-flex align-items-center justify-content-center">
+      <img src="../test-assests/images/CIMG0884.JPG" class="img-sm" alt="">
+      <h1 class="text-align-center tiny-margin">Login</h1>
+    </div>
+    <!--Remember to use a container for group dark mode-->
+    <form  id="form-group" class="form-group container">
+      <input type="email" class="input-custom tiny-margin" placeholder="Email">
+      <input type="password" class="input-custom tiny-margin" placeholder="Password">
+      <input type="submit" class="input-custom tiny-margin" value="Submit">
+    </form>
+    <p class="text-align-center">Don't Have an Account? <a href="">Sign-Up</a> Now</p>
+  </div>
+
+
+  <div id="cookie-container" class="cookie-container">
+    <div class="cookie-text">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Esse eum unde odio dolorem culpa excepturi doloribus
+        eos et corrupti totam. Nam esse ipsam tempore minus.</p>
+    </div>
+    <div class="cookie-permission-container">
+      <button id="accept" class="btn btn-success">
+        Accept
+      </button>
+      <button id="decline" class="btn btn-danger">
+        Decline
+      </button>
+    </div>
+  </div>
+
+  <div id="dropdown" class="dropdown container">
+    <button class="btn btn-dropdown">DropDown</button>
+
+    <div class="dropdown-menu">
+      <a href="" class="menu-item">Yo</a>
+      <a href="" class="menu-item">Yo</a>
+      <a href="" class="menu-item">Yo</a>
+      <a href="" class="menu-item">Yo</a>
+    </div>
+
+  </div>  
+
   <!-- Always Place footer at the last of the Document -->
-  <footer class="footer">
+  <footer  id="footer" class="footer">
     <!-- Little Buggy Needs to be fixed ❌-->
     <!-- Bug: Padding Left is not removed -->
     <div class="footer-link-container">
@@ -231,7 +279,7 @@
     </div>
   </footer>
 </body>
-
+<script src="./main.js"></script>
 
 
 </html>

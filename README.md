@@ -8,8 +8,6 @@ Another great approach of it is that it is built on top of the modern CSS3 that 
 
 * Flexbox
 * no-Variable base
-* 
-* 
 
 It uses the modern & developers favorite
 
@@ -53,15 +51,20 @@ function $(el) {
 }
 let toggleBtn = $("toggle");
 let semiDiv = $("semi-div");
-if (!semiDiv.getAttribute("data-shade")){
+
+function toggleDarkMode(e){
+  if (!semiDiv.getAttribute("data-shade")){
     semiDiv.setAttribute("data-shade", "dark");
+  }
+  else{
+    semiDiv.removeAttribute("data-shade");
+  }
 }
-else{
-     semiDiv.removeAttribute("data-shade");
-}
+
+toggleBtn.addEventListener("click", toggleDarkMode)
 ```
 
 
 Don't worry if you are terrified seeing that you have write `setAttribute()`, `getAttribute()` & `removeAttribute()` so many times. You can use a `for` loop or a high-order function array function to fix this issue...
 
-For more information stay with me & follow me on [Twitter](https://twitter.com/@krtirtho) & [Facebook](https://facebook.com/krtirtho)
+For more information stay with me & follow me on <a href="https://twitter.com/@krtirtho" target="_blank">Twitter</a> & <a href="https://facebook.com/krtirtho" target="_blank">Facebook</a>

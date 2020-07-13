@@ -41,6 +41,10 @@ body{
     --input-checkbox-checked-bg: #00c58a;
     --input-checkbox-symbol-color: #f3f3f3;
 
+    --input-switch-bg: #f3f3f3;
+    --input-switch-toggle-bg: white;
+    --input-switch-checked-bg: #1d64e7;
+
     --dark-input-field-bg: #4e4e4e;
     --dark-input-field-border-color: #380081;
     --dark-input-field-color: white;
@@ -141,7 +145,13 @@ a{
 
 
 /* Default button */
-.btn{
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-danger,
+.btn-chill,
+.btn-close{
     transition: var(--global-transition-duration) all;
     border: none;
     border-radius: 5px;
@@ -168,6 +178,7 @@ a{
 }
 .btn:disabled{
     cursor: not-allowed;
+    filter: brightness(0.8);
 }
 .btn-close{
     background-color: var(--btn-close-bg);
@@ -248,7 +259,42 @@ a{
     cursor: pointer;
 }
 
-/* Default Check box */
+
+
+/* Switch Check box */
+
+
+.input-switch{
+    outline: none;
+    -webkit-appearance: none;
+    background-color: var(--input-switch-bg);
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.384);
+}
+.input-switch::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--input-switch-toggle-bg);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.274);
+    transition: var(--global-transition-duration) all;
+}
+
+.input-switch:checked{
+    background-color: var(--input-switch-checked-bg);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.808);
+}
+
+.input-switch:checked::before{
+    left: 20px;
+}
 
 /* Default Input color */
 .input-custom[type="color"]{
@@ -495,4 +541,7 @@ a{
 .container[data-shade="dark"] > .container-div{
     background-color: var(--dark-common-bg) !important;
     color: white;
+}
+.test{
+    align-items: ;
 }

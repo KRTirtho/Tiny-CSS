@@ -204,7 +204,7 @@ body{
     position: relative;
     display: inline-block;
 }
-.dropdown-menu{
+.dropdown-menu, .dropdown-menu-right{
     display: block;
     opacity: 0;
     visibility: hidden;

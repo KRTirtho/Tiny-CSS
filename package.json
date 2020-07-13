@@ -1,0 +1,37 @@
+{
+  "name": "tiny-css",
+  "version": "1.0.0",
+  "description": "It's a CSS framework which tiny & lite weight",
+  "main": "./bin/index.js",
+  "scripts": {
+    "start": "cd bin/ && nodemon index.js"
+  },
+  "bin": {
+    "tiny-css": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KRTirtho/Tiny-CSS.git"
+  },
+  "keywords": [
+    "CSS",
+    "FRAMEWORK",
+    "COMPILED",
+    "JS"
+  ],
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "author": "KR.Tirtho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KRTirtho/Tiny-CSS/issues"
+  },
+  "homepage": "https://github.com/KRTirtho/Tiny-CSS#readme",
+  "dependencies": {
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "yargs": "^15.4.1"
+  }
+}
